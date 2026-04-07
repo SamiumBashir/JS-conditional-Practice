@@ -12,8 +12,8 @@ Create a JavaScript program that calculates the Body Mass Index (BMI) and assign
 
 */
 
-const weight = 72;
-const heightInFeet = 5.6;
+const weight = 56;
+const heightInFeet = 5.2;
 
 const heightInMeter = heightInFeet * 0.3048;
 
