@@ -19,20 +19,14 @@ Display sum of all the even numbers from 206 to 311.
 
 let oddNumberList = [];
 let oddNumber = 81;
+let sum = 0;
 
-while (oddNumber < 131) {
-    oddNumberList.push(oddNumber);
-    oddNumber += 2;
+while (oddNumber <= 131) {
+    if(oddNumber % 2 ===1){
+        oddNumberList.push(oddNumber);
+        sum += oddNumber
+    }
+    oddNumber++;
 }
-console.log("Odd Numbers",oddNumberList);
-
-
-let evenNumberList = [];
-let evenNumber = 206;
-
-while (evenNumber < 311) {
-    evenNumberList.push(evenNumber);
-    evenNumber += 2;
-}
-console.log("Even Numbers",evenNumberList);
-console.log("count of even number", (evenNumberList.length));
+console.log("list", oddNumberList);
+console.log("Odd Numbers",sum);
