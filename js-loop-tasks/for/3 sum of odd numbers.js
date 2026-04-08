@@ -21,7 +21,7 @@ Display sum of all the even numbers from 51 to 85.
 let oddNumberList = []; //declaration 
 let totalSum = 0; // declaration 
 
-for( oddNumber = 91 ; oddNumber <= 129; oddNumber++){
+for(let oddNumber = 91 ; oddNumber <= 129; oddNumber++){
     if (oddNumber % 2 === 1){
         oddNumberList.push(oddNumber);
         totalSum += oddNumber;
