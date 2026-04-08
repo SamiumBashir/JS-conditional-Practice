@@ -29,4 +29,20 @@ while (oddNumber <= 131) {
     oddNumber++;
 }
 console.log("list", oddNumberList);
-console.log("Odd Numbers",sum);
+console.log("Odd Numbers Sum",sum);
+
+
+let evenNumberList = [];
+let evenNumber = 206;
+let sumOfEven = 0;
+
+while (evenNumber < 311) {
+    if( evenNumber % 2 ===0) {
+        evenNumberList.push(evenNumber);
+        sumOfEven += evenNumber;
+    }
+    evenNumber++;
+}
+
+console.log("List",evenNumberList);
+console.log("Even Numbers Sum", sumOfEven);
