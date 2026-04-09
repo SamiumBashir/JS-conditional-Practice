@@ -7,4 +7,4 @@ for (let product of products){
     }
 }
 
-console.log(count)
+console.log(count);
