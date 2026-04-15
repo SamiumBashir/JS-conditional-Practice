@@ -1,5 +1,5 @@
 const allHeading = document.getElementsByTagName('h1');
-console.log (allHeading);
+
 for(let headings of allHeading){
     headings.innerText = 'Atao naki heading';
     headings.innerText = headings.innerText.replace('Atao', 'Otao')
@@ -7,10 +7,8 @@ for(let headings of allHeading){
 }
 
 const listItems = document.getElementById('list');
-console.log (listItems);
 
 const items = document.querySelectorAll('#list li')
-console.log( items[1]);
 
 items[1].innerText = 'ami valo achi';
 items[1].style.color = 'red';
@@ -20,7 +18,17 @@ items[1].style.backgroundColor = 'black'
 
 const section = document.createElement('section');
 
-// loop দিয়ে multiple card বানাও
+const cardBox = document.createElement ('div');
+const heading = document.createElement('h1');
+heading.innerText = 'This is a heading'
+
+//append child
+
+section.appendChild(heading);
+section.appendChild(cardBox);
+
+//loop
+
 for (let i = 1; i <= 3; i++) {
   const card = document.createElement('div');
 
@@ -41,23 +49,24 @@ for (let i = 1; i <= 3; i++) {
   card.style.padding = '10px';
   card.style.borderRadius = '8px';
 
-  // section এ add
-  section.appendChild(card);
+  //append
+  cardBox.appendChild(card);
 }
 
-// শেষে body তে add
+
+//append
+
 document.body.appendChild(section);
 
 // section style
-section.style.display = 'flex';
-section.style.justifyContent = 'space-around'
-section.style.gap = '20px'
-section.style.maxWidth = '1140px';
 section.style.backgroundColor = '#aaa';
 section.style.padding = '15px';
-section.style.margin = '0 150px';
+section.style.margin = '0 350px';
 section.style.border = '2px solid green';
 section.style.borderRadius = '12px';
+
+cardBox.style.display = 'flex'
+cardBox.style.justifyContent = 'space-around'
 
 
 
