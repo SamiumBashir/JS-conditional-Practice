@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    padding: 15px 0;
+}
+
+.main{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.comments{
+    margin: 24px 0;
+    padding: 24px 10px;
+    border: 2px solid cyan;
+    border-radius: 12px;
+    max-width: 560px;
+}
+
+
+
+.btn{
+    padding: 10px 25px;
+    background-color: cyan;
+    border: none;
+    border-radius: 15px;
+}
+
