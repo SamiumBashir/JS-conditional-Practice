@@ -27,9 +27,34 @@
     />
   </head>
   <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    <div class="logo w-[200px] mx-auto pt-32">
-      <img src="./assets/Logo-full.png" alt="" />
-    </div>
+    <header class="border-b-2 border-gray-300">
+        <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
+            <div class="left flex gap-1">
+                <div class="w-[60px]">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div class="balance-info">
+                    <h2 class="text-2xl font-bold">
+                        $ <span id="balance">4500</span>
+                    </h2>
+                    <p class="text-neutral/50">
+                        Available Balance
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <a href="./index.html" class="btn"><i class="fa-solid fa-right-from-bracket"></i>Log Out</a>
+            </div>
+        </section>
+    </header>
+    <section class="w-11/12 mx-auto mt-8 mb-6 space-y-3">
+        <h2 class="text-2xl font-bold">
+            Welcome to Pay<span class="text-primary">oo</span>
+        </h2>
+        <p class="text-neutral/50">
+            Enjoy easy and convenient financial services with us. Cashout charge is and 
+        </p>
+    </section>
     <script src="./login.js"></script>
   </body>
 </html>
