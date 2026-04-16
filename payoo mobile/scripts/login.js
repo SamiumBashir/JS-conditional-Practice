@@ -11,7 +11,7 @@ document.getElementById('login-btn').addEventListener('click', function(){
 
     if(contactNumber == '01934164177' && pinNumber == '1123'){
         alert('Welcome to Payoo')
-        window.location.assign('/home.html')
+        window.location.assign('./home.html')
     }
     else{
         alert('Check your number or pin')
