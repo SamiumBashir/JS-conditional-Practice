@@ -42,5 +42,3 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
     numberOfAmount.value = '';
     withdrawalPin.value = '';
 })
-
-window.location.href(./cashout.html)
